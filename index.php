@@ -1,7 +1,7 @@
 <?php
     include_once 'head.php';
 ?>
-<p>test</p>
+<p>index test</p>
 </body>
 
 </html>
