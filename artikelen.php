@@ -12,7 +12,7 @@
                     <label for="artikel-prijs">artikelprijs</label>
                     <input type="number" step="0.01" name="artikel-prijs">
                 </div>
-                <input type="submit">submit
+                <input type="submit">
             </form>
         </main>
         <aside>
@@ -21,7 +21,10 @@
                 <tr><th>prijs</th></tr>
                 <?php
                     $sql_artikel = "SELECT * from artikel";
-
+                    $result = $conn->query($sql_artikel);
+                    while($row_artikel = $result -> fetch_assoc()){
+                        echo '<tr><td>'.$row_artikel['artikelnaam'].'</td><td>'.$row_artikel['prijs'].'</td></tr>';
+                    }
                 ?>
             </table>
         </aside>
