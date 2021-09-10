@@ -1,7 +1,19 @@
 <?php
     include_once 'head.php';
 ?>
-<p>addorder test</p>
+<div class="main-wrapper">
+    <form action="submit"></form>
+</div>
+
+<div class="aside-wrapper">
+    <aside>
+        <?php
+            $winkelwagen = array();
+            foreach($winkelwagen as $key=>$value){echo $value; echo $key;}
+        ?>
+    </aside>
+</div>
+
 </body>
 
 </html>
